@@ -20,9 +20,9 @@ form {
 }
 
 form img {
-    margin-left: 27%;
-    width: 45%;
-    height: 50%;
+    margin-left: 82px;
+    width: 100px;
+    height: 100px;
 }
 
 .login {
@@ -32,6 +32,7 @@ form img {
 }
 
 form label {
+    margin-top: auto;
     margin-left: 13%;
     font-family: Roboto;
     font-style: normal;
@@ -41,16 +42,15 @@ form label {
 }
 
 form fieldset {
+    display: flex;
     border: 0;
 }
 
 form fieldset input {
     margin-left: 30px;
-    font-size: 28px;
+    font-size: 20px;
     width: 200px;
     height: 50px;
-    left: 548px;
-    top: 440px;
     background: #fff8f8;
     border: 3px solid rgba(0, 0, 0, 0.54);
     box-sizing: border-box;
@@ -64,8 +64,6 @@ form button {
     color: #FFFFFF;
     width: 100px;
     height: 38px;
-    left: 594px;
-    top: 553px;
     background: #2662D0;
     border-radius: 5px;
     border: 0;
