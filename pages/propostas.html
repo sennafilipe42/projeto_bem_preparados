@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Propostas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/propostas.css">
+
+
+<body class="fundoProp">
+
+    <div class="content">
+
+
+
+        <form action="">
+
+            <header>
+                <img src="/assets/b_sem_fundo.png" alt="logomarca">
+                <h1>Cadastro de Propostas</h1>
+            </header>
+
+            <fieldset>
+                <legend>
+                    <h2> Dados do cliente</h2>
+
+                </legend>
+
+                <div class="field">
+                    <label for="name">Nome completo</label>
+                    <input type="text" name="name">
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="birthday">Data de Nascimento</label>
+                        <input type="date" name="birthday">
+                    </div>
+
+                    <div class="field">
+                        <label for="genero">Genero</label>
+                        <select name="genero">
+                            <option value="">Selecione o seu genero</option>
+                        </select>
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="cep">
+                    <label for="CEP">CEP:
+                        <input name="CEP" id="CEP" required pattern="\d{5}-\d{3}" />
+                    </label>
+                    <button>Enviar</button>
+                </div>
+
+
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address"></label>Endereço<input type="text" name="address">
+
+                    </div>
+                    <div class="field">
+                        <label for="address"></label>Número/Complemento<input type="text" name="address">
+
+
+                    </div>
+                </div>
+
+                <div class="field-group">
+                    <div class="field">
+                        <label for="address"></label>Bairro<input type="text" name="address">
+
+                    </div>
+                    <div class="field">
+                        <label for="city"></label>Municipio<input type="text" name="city">
+
+
+                    </div>
+                    <div class="field">
+                        <label for="state"></label>UF<input type="text" name="state">
+
+
+                    </div>
+                </div>
+
+
+
+
+
+            </fieldset>
+
+
+
+            <fieldset>
+                <legend>
+                    <h2> Dados do empréstimo</h2>
+
+                </legend>
+
+            </fieldset>
+            <button>Salvar</button>
+
+    </div>
+
+    </form>
+    </div>
+</body>
+
+</html>
