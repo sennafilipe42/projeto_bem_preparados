@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "K/jhWUGmpyySBRcJk2sfdaoI+TnYoGXhksuS3LlQTXw7Sfaya4xZ5FmBZIYoYtCc6vXCaYpJOtTnk+F89yyQmg==",
+  "dgSpecHash": "rEFArVW4LXgeuAYDTSBjNejuBkwxzIE1PFt8DpjEcqoyi0x97rWKCGubGuFKjCa32nCEnQ3t0AetUnNE7M6qUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Api.Data\\Data.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Senna\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
+    "C:\\Users\\Senna\\.nuget\\packages\\system.reflection.emit.lightweight\\4.7.0\\system.reflection.emit.lightweight.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
