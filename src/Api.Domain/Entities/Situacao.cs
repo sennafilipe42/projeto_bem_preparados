@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Api.Data.Entities
 {
     [Table("TREINA_SITUACAO")]
-    public class Situação : BaseEntity
+    public class Situacao : BaseEntity
     {
         [Required]
         [Column("ID_TREINA_SITUACAO")]

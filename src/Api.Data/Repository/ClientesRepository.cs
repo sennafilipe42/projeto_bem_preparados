@@ -5,33 +5,33 @@ using Microsoft.Extensions.Configuration;
 
 namespace Api.Data
 {
-    public class ClientesRepository : RepositoryConnector, Interfaces.IUsuariosRepository
+    public class ClientesRepository : RepositoryConnector, Interfaces.IClientesRepository
     {
 
         //Chama o ctor do repositorio herdado
         public ClientesRepository(IConfiguration config) : base(config) { }
 
-        public void add(Usuarios obj)
+        public void add(Clientes obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public Usuarios Get(int id)
+        public Clientes Get(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Usuarios> GetAll()
+        public IEnumerable<Clientes> GetAll()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Usuarios obj)
+        public void Remove(Clientes obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Update(Usuarios obj)
+        public void Update(Clientes obj)
         {
             throw new System.NotImplementedException();
         }

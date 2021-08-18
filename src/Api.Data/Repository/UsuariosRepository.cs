@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using Api.Data.Entities;
 using Api.Data.Repository;
+using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Configuration;
+using Dapper;
 
 namespace Api.Data
 {
@@ -23,7 +25,15 @@ namespace Api.Data
 
         public IEnumerable<Usuarios> GetAll()
         {
-            throw new System.NotImplementedException();
+            IEnumerable<Usuarios> retorno;
+            string sql = "SELECT * FROM Usuarios";
+            using (var con = new SqlConnection(base.GetConnection()))
+            {
+                retorno = con.Query<Usuarios>(sql);
+
+            }
+
+            return retorno;
         }
 
         public void Remove(Usuarios obj)

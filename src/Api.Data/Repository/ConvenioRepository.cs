@@ -5,33 +5,33 @@ using Microsoft.Extensions.Configuration;
 
 namespace Api.Data
 {
-    public class ConvenioRepository : RepositoryConnector, Interfaces.IUsuariosRepository
+    public class ConvenioRepository : RepositoryConnector, Interfaces.IConvenioRepository
     {
 
         //Chama o ctor do repositorio herdado
         public ConvenioRepository(IConfiguration config) : base(config) { }
 
-        public void add(Usuarios obj)
+        public void add(Convenio obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public Usuarios Get(int id)
+        public Convenio Get(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Usuarios> GetAll()
+        public IEnumerable<Convenio> GetAll()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Usuarios obj)
+        public void Remove(Convenio obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Update(Usuarios obj)
+        public void Update(Convenio obj)
         {
             throw new System.NotImplementedException();
         }

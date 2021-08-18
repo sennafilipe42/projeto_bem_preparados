@@ -14,7 +14,7 @@ namespace Api.Data.Repository
 
         public string GetConnection()
         {
-            return _configuration.GetSection("Connections").GetSection("ConnectionStringUdemy").Value;
+            return _configuration.GetSection("Connections").GetSection("ConnectionStringProjeto").Value;
         }
 
     }

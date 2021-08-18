@@ -5,33 +5,33 @@ using Microsoft.Extensions.Configuration;
 
 namespace Api.Data
 {
-    public class CadastroPropostaRepository : RepositoryConnector, Interfaces.IUsuariosRepository
+    public class CadastroPropostaRepository : RepositoryConnector, Interfaces.ICadastroPropostaRepository
     {
 
         //Chama o ctor do repositorio herdado
         public CadastroPropostaRepository(IConfiguration config) : base(config) { }
 
-        public void add(Usuarios obj)
+        public void add(CadastroPropostas obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public Usuarios Get(int id)
+        public CadastroPropostas Get(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Usuarios> GetAll()
+        public IEnumerable<CadastroPropostas> GetAll()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Usuarios obj)
+        public void Remove(CadastroPropostas obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Update(Usuarios obj)
+        public void Update(CadastroPropostas obj)
         {
             throw new System.NotImplementedException();
         }

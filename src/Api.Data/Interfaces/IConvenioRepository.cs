@@ -2,7 +2,7 @@ using Api.Data.Entities;
 
 namespace Api.Data.Interfaces
 {
-    public interface IConvenioRepository : IRepository<Usuarios>
+    public interface IConvenioRepository : IRepository<Convenio>
     {
 
     }

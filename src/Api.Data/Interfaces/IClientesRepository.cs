@@ -1,17 +1,9 @@
-using System.Collections.Generic;
+using Api.Data.Entities;
 
 namespace Api.Data.Interfaces
 {
-    public interface IClientesRepository<T> where T : class
+    public interface IClientesRepository : IRepository<Clientes>
     {
 
-        IEnumerable<T> GetAll();
-
-        T Get(int id);
-        void add(T obj);
-
-        void Remove(T obj);
-
-        void Update(T obj);
     }
 }

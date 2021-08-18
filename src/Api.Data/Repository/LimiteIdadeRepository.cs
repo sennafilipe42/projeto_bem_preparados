@@ -5,33 +5,33 @@ using Microsoft.Extensions.Configuration;
 
 namespace Api.Data
 {
-    public class LimiteIdadeRepository : RepositoryConnector, Interfaces.IUsuariosRepository
+    public class LimiteIdadeRepository : RepositoryConnector, Interfaces.ILimiteIdadeRepository
     {
 
         //Chama o ctor do repositorio herdado
         public LimiteIdadeRepository(IConfiguration config) : base(config) { }
 
-        public void add(Usuarios obj)
+        public void add(LimiteIdade obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public Usuarios Get(int id)
+        public LimiteIdade Get(int id)
         {
             throw new System.NotImplementedException();
         }
 
-        public IEnumerable<Usuarios> GetAll()
+        public IEnumerable<LimiteIdade> GetAll()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Remove(Usuarios obj)
+        public void Remove(LimiteIdade obj)
         {
             throw new System.NotImplementedException();
         }
 
-        public void Update(Usuarios obj)
+        public void Update(LimiteIdade obj)
         {
             throw new System.NotImplementedException();
         }
