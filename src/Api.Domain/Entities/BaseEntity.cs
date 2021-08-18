@@ -4,13 +4,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Api.Data.Entities
 {
-    public class BaseEntity<T> where T : struct
+    public abstract class BaseEntity
     {
-        [Key]
-        [Column("CPF")]
-        public T CPF { get; set; }
-
-
         [Column("DATA_ATUALIZACAO")]
         private DateTime? _dataAtualizacao;
         public DateTime? DATA_ATUALIZACAO

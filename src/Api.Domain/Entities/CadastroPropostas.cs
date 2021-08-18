@@ -6,14 +6,21 @@ using System.ComponentModel.DataAnnotations;
 namespace Api.Data.Entities
 {
     [Table("TREINA_PROPOSTAS")]
-    public class CadastroPropostas : BaseEntity<int>
+    public class CadastroPropostas : BaseEntity
     {
-        [Key]
+
+        [Required]
+        [Column("ID_TREINA_PROPOSTA")]
+        public int ID_TREINA_PROPOSTA { get; set; }
+
         [Required]
         [Column("PROPOSTA")]
         public int PROPOSTA { get; set; }
 
-        [Key]
+        [Required]
+        [Column("CPF")]
+        public string CPF { get; set; }
+
         [Column("CONVENIADA")]
         public string CONVENIADA { get; set; }
 
@@ -26,17 +33,18 @@ namespace Api.Data.Entities
         [Column("VLR_FINANCIADO")]
         public int VLR_FINANCIADO { get; set; }
 
-        [Key]
+        [Required]
         [Column("SITUACAO")]
         public string SITUACAO { get; set; }
 
         [Column("OBSERVACAO")]
         public string OBSERVACAO { get; set; }
 
+        [Required]
         [Column("DT_SITUACAO")]
         public DateTime DT_SITUACAO { get; set; }
 
-        [Key]
+        [Required]
         [Column("USUARIO")]
         public string USUARIO { get; set; }
     }

@@ -5,9 +5,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Api.Data.Entities
 {
     [Table("TREINA_USUARIOS")]
-    public class Usuarios : BaseEntity<int>
+    public class Usuarios : BaseEntity
     {
-        [Key]
+        [Required]
+        [Column("ID_TREINA_USUARIO")]
+        public int ID_TREINA_USUARIO { get; set; }
+
         [Required]
         [Column("USUARIO")]
         public string USUARIO { get; set; }
