@@ -1,9 +1,0 @@
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrosCutting.deps.json
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrosCutting.dll
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\bin\Debug\netcoreapp3.1\CrosCutting.pdb
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.csproj.AssemblyReference.cache
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.AssemblyInfoInputs.cache
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.AssemblyInfo.cs
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.csproj.CoreCompileInputs.cache
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.dll
-C:\Users\Senna\projeto_bem_preparados\src\Api.CrossCutting\obj\Debug\netcoreapp3.1\CrosCutting.pdb
