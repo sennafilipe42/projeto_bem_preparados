@@ -2,7 +2,7 @@ using Api.Data.Entities;
 
 namespace Api.Data.Interfaces
 {
-    public interface LimiteIdadeRepository : IRepository<Usuarios>
+    public interface ILimiteIdadeRepository : IRepository<Usuarios>
     {
 
     }

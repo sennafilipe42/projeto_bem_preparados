@@ -2,7 +2,7 @@ using Api.Data.Entities;
 
 namespace Api.Data.Interfaces
 {
-    public interface SituacaoRepository : IRepository<Usuarios>
+    public interface ISituacaoRepository : IRepository<Usuarios>
     {
 
     }
