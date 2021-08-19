@@ -1,33 +1,90 @@
+using System;
+using System.Collections.Generic;
+using Domain.Validators;
+
 namespace Domain.Entities
 {
     public class UserEntitie : Base
     {
-        //deixando privado para somente o metodo de validação
+
+
+        //deixando privado para somente o metodo de validação           public int Id { get; private set; }
+
         public int Id { get; private set; }
+        public string Usuario { get; private set; }
 
-        public string Cpf { get; private set; }
+        public string Senha { get; private set; }
 
-        public string String { get; private set; }
+        public string Nome { get; private set; }
 
-        public smalldatetime DtNascimento { get; private set; }
+        public DateTime ValidadeSenha { get; private set; }
 
-        public string Genero { get; private set; }
+        //Metodo que vai ser feito paara acessar
+        // pois é privado.
 
-        public int VlrSalario { get; private set; }
-
-        public string Logradouro { get; private set; }
-
-        public string NumeroResidencia { get; private set; }
-
-        public string Bairro { get; private set; }
-
-        public string Cidade { get; private set; }
-
-        public string Cep { get; private set; }
-
-        
+        //var usuario = new usuario("Teste")
+        //usuario.ChangeName("Teste")
 
 
+        //particularidade do entitie framework
+        //só será passar as propriedades por aqui
+        protected UserEntitie() { }
 
+        //Construtor
+        public UserEntitie(int id, string usuario, string senha, string nome, DateTime validadeSenha)
+        {
+            this.Id = id;
+            this.Usuario = usuario;
+            this.Senha = senha;
+            this.Nome = nome;
+            this.ValidadeSenha = validadeSenha;
+
+            //instanciar a lista de erros
+            _errors = new List<string>();
+
+        }
+
+
+        public void ChangeUsuario(string usuario)
+        {
+            Usuario = usuario;
+            Validate();
+        }
+
+        public void ChangeNome(string nome)
+        {
+            Nome = nome;
+            Validate();
+        }
+
+        public void ChangeSenha(string senha)
+        {
+            Senha = senha;
+            Validate();
+        }
+
+        public void ChangeValidadeSenha(DateTime validadeSenha)
+        {
+            ValidadeSenha = validadeSenha;
+            Validate();
+        }
+
+
+        //Validação do usuário usando bool, True or False
+        public override bool Validate()
+        {
+            var validador = new UsuarioValidador();
+            var validation = validador.Validate(this);
+
+            if (!validation.IsValid)
+            {
+                foreach (var error in validation.Errors)
+                    _errors.Add(error.ErrorMessage);
+
+                throw new Exception("Alguns campos estão inválidos, por favor os corrija!" + _errors[0]);
+            }
+
+            return true;
+        }
     }
 }
