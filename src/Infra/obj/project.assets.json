@@ -1533,6 +1533,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Project.Core": "1.0.0",
           "fluentvalidation": "10.3.1"
         },
         "compile": {
@@ -1540,6 +1541,16 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
+        }
+      },
+      "Project.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Project.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Core.dll": {}
         }
       }
     }
@@ -5832,6 +5843,11 @@
       "type": "project",
       "path": "../Domain/Domain.csproj",
       "msbuildProject": "../Domain/Domain.csproj"
+    },
+    "Project.Core/1.0.0": {
+      "type": "project",
+      "path": "../Project.Core/Project.Core.csproj",
+      "msbuildProject": "../Project.Core/Project.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {

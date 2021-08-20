@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v5.0": {
       "Domain/1.0.0": {
         "dependencies": {
+          "Project.Core": "1.0.0",
           "FluentValidation": "10.3.1"
         },
         "runtime": {
@@ -20,6 +21,11 @@
             "assemblyVersion": "9.0.0.0",
             "fileVersion": "10.3.1.0"
           }
+        }
+      },
+      "Project.Core/1.0.0": {
+        "runtime": {
+          "Project.Core.dll": {}
         }
       }
     }
@@ -36,6 +42,11 @@
       "sha512": "sha512-aFy876EWQi/af5q+ZcxnNdDpNtzk4XlamFsGCbtsdUx3WILX7KIy5LVc5NAgK8XmkFvuRJx8QdCIgjW8B82LFQ==",
       "path": "fluentvalidation/10.3.1",
       "hashPath": "fluentvalidation.10.3.1.nupkg.sha512"
+    },
+    "Project.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

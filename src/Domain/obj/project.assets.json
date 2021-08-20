@@ -10,6 +10,16 @@
         "runtime": {
           "lib/net5.0/FluentValidation.dll": {}
         }
+      },
+      "Project.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/Project.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Project.Core.dll": {}
+        }
       }
     }
   },
@@ -31,10 +41,16 @@
         "lib/netstandard2.1/FluentValidation.dll",
         "lib/netstandard2.1/FluentValidation.xml"
       ]
+    },
+    "Project.Core/1.0.0": {
+      "type": "project",
+      "path": "../Project.Core/Project.Core.csproj",
+      "msbuildProject": "../Project.Core/Project.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Project.Core >= 1.0.0",
       "fluentvalidation >= 10.3.1"
     ]
   },
@@ -74,7 +90,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj": {
+              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

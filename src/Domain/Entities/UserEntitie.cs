@@ -42,6 +42,8 @@ namespace Domain.Entities
             //instanciar a lista de erros
             _errors = new List<string>();
 
+            Validate();
+
         }
 
 

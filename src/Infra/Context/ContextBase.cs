@@ -13,10 +13,10 @@ namespace Infra.Context
 
 
         //Conexão com banco de dados SqlServer2017
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(@"Server=localhost;Database=senna;User Id=myUsername;Password=myPassword;");
-        }
+        // protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        // {
+        //     optionsBuilder.UseSqlServer(@"Server=localhost;Database=senna;User Id=myUsername;Password=myPassword;");
+        // }
 
         //Tabela setada no banco referente ao usuario        
         public virtual DbSet<UserEntitie> Users { get; set; }
