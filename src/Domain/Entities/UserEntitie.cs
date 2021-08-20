@@ -4,7 +4,7 @@ using Domain.Validators;
 
 namespace Domain.Entities
 {
-    public class UserEntitie : Base
+    public class UserEntitie : BaseEntitie
     {
 
 

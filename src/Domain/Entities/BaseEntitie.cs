@@ -3,7 +3,7 @@ using System;
 
 namespace Domain.Entities
 {
-    public abstract class Base
+    public abstract class BaseEntitie
     {
         public string USUARIO_ATUALIZACAO { get; set; }
         public DateTime DATA_ATUALIZACAO { get; set; }
