@@ -19,16 +19,16 @@ namespace Domain.Validators
 
             RuleFor(x => x.Usuario)
                 .NotEmpty()
-                .WithMessage("A usuario não pode ser vazio.")
+                .WithMessage("O usuario não pode ser vazio.")
 
                 .NotNull()
-                .WithMessage("A usuario não pode ser nulo")
+                .WithMessage("O usuario não pode ser nulo")
 
                 .MinimumLength(8)
-                .WithMessage("A usuario deve ter no mínimo 8 caracteres.")
+                .WithMessage("O usuario deve ter no mínimo 8 caracteres.")
 
                 .MaximumLength(14)
-                .WithMessage("O nome de ter no mínimo 14 caracteres.");
+                .WithMessage("O usuario de ter no máximo 14 caracteres.");
 
             RuleFor(x => x.Nome)
                 .NotEmpty()
