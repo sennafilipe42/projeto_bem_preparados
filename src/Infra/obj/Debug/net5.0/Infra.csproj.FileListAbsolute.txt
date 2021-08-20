@@ -1,0 +1,5 @@
+C:\Users\Senna\projeto_bem_preparados\src\Infra\obj\Debug\net5.0\Infra.csproj.AssemblyReference.cache
+C:\Users\Senna\projeto_bem_preparados\src\Infra\obj\Debug\net5.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Senna\projeto_bem_preparados\src\Infra\obj\Debug\net5.0\Infra.AssemblyInfoInputs.cache
+C:\Users\Senna\projeto_bem_preparados\src\Infra\obj\Debug\net5.0\Infra.AssemblyInfo.cs
+C:\Users\Senna\projeto_bem_preparados\src\Infra\obj\Debug\net5.0\Infra.csproj.CoreCompileInputs.cache
