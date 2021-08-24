@@ -12,6 +12,7 @@ namespace Services
     public class UserService : IUserService
     {
 
+            //injeção de dependencia
         private readonly IMapper _mapper;
 
         private readonly IUserRepository _userRepository;
@@ -23,7 +24,7 @@ namespace Services
         }
 
 
-
+        //regras de negocio
         public async Task<UserDTO> Create(UserDTO userDTO)
         {
             var userExists = await _userRepository.GetByUsuario(userDTO.Usuario);
@@ -33,7 +34,7 @@ namespace Services
 
             //utilizando o auto mapper, para fazer o "de para"
             var user = _mapper.Map<UserEntitie>(userDTO);
-            user.Validate();
+            user.Validate(); //validação de dominio
 
             // usuário não estando no banco, ele cria o usuario
             var userCreated = await _userRepository.Create(user);

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LD9vS+2RKeNQMAEynKKdQY9fRVPwMWSipBqXZni3yU93ltpffiuQmBQQ8aa0Aug4w8rvMeQh43ypQG4/HjQMhg==",
+  "dgSpecHash": "e5w/DNFBFmhNeV0HypH8t0DT78PkkHRaLQkD5MKvAdfJox13IkGqQPb7IyIFsAbIe9XeBu8BmLRlHmqDJlvKDg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Senna\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Senna\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512",

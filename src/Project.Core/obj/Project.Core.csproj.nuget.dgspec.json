@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj": {}
+    "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj": {
+    "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj",
+        "projectUniqueName": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj",
         "projectName": "Project.Core",
-        "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj",
+        "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj",
         "packagesPath": "C:\\Users\\Senna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\obj\\",
+        "outputPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

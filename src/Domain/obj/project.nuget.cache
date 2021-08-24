@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/wI+ERf6jQw3bh8njgA374KvsaGA5p/xugPrSWSjJcxuMaWhKsGs13L1z1pPv+0xzaNI+beBn5dPLC0i9jgq9Q==",
+  "dgSpecHash": "63P+tChNCGHmDDXEwmJMTJxYLF4uo2r/1ZSJ60Ir0cdmR8h2hFdigchHO/6mmZKC9R6R9lL89kE+dzPbFdhqyQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Senna\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512"
   ],

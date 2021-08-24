@@ -4,6 +4,9 @@ using Services.DTO;
 
 namespace Services.Interfaces
 {
+    //comunicação da API com o services
+    //via DTO
+
     public interface IUserService
     {
         Task<UserDTO> Create(UserDTO userDTO);

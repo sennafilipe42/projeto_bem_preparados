@@ -5834,11 +5834,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Services\\Services.csproj",
+      "projectUniqueName": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Services\\Services.csproj",
       "projectName": "Services",
-      "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Services\\Services.csproj",
+      "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Services\\Services.csproj",
       "packagesPath": "C:\\Users\\Senna\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Services\\obj\\",
+      "outputPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -5862,14 +5862,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Domain\\Domain.csproj"
+            "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Domain\\Domain.csproj"
             },
-            "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Infra\\Infra.csproj": {
-              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Infra\\Infra.csproj"
+            "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Infra\\Infra.csproj": {
+              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Infra\\Infra.csproj"
             },
-            "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj": {
-              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados\\src\\Project.Core\\Project.Core.csproj"
+            "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj": {
+              "projectPath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Project.Core\\Project.Core.csproj"
             }
           }
         }
