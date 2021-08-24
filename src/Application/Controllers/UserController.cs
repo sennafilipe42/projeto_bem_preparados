@@ -10,6 +10,8 @@ using Services.Interfaces;
 
 namespace Application.Controllers
 {
+        //controlador é o cara que recebe as requisições
+        //e manda para as camadas fazerem o que precisam
     [ApiController]
     public class UserController : ControllerBase
     {
@@ -23,10 +25,11 @@ namespace Application.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost]
+        [HttpPost] //rota de entrada para poder enviar o user
         [Route("/api/v1/users/create")]
+                    //retorna o resultado dee uma Task
         public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
-        {
+        {                                       //corpo da requisição
             try
             {
                 var userDTO = _mapper.Map<UserDTO>(userViewModel);
