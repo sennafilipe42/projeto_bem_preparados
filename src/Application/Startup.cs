@@ -37,18 +37,18 @@ namespace Applications
 
             services.AddControllers();
 
-            #region Automapper
-            var autoMapperConfig = new MapperConfiguration(cfg =>
-            {
-                cfg.CreateMap<UserEntitie, UserDTO>().ReverseMap();
-                cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
-            });
-            #endregion 
-            services.AddSingleton(autoMapperConfig.CreateMapper());
-            //Adiciona uma stancia unica por requisicao
-            //durante todo o ciclo da aplicacao
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            // #region Automapper
+            // var autoMapperConfig = new MapperConfiguration(cfg =>
+            // {
+            //     cfg.CreateMap<UserEntitie, UserDTO>().ReverseMap();
+            //     cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
+            // });
+            // #endregion 
+            // services.AddSingleton(autoMapperConfig.CreateMapper());
+            // //Adiciona uma stancia unica por requisicao
+            // //durante todo o ciclo da aplicacao
+            // services.AddScoped<IUserService, UserService>();
+            // services.AddScoped<IUserRepository, UserRepository>();
 
             //adiciona uma stancia nova em cada ponto do codigo
             //se precisar dessa mesma depencia em 3 ctors, ele cria 3 instancias
