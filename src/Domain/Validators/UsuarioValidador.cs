@@ -24,10 +24,7 @@ namespace Domain.Validators
                 .NotNull()
                 .WithMessage("O usuario não pode ser nulo")
 
-                .MinimumLength(8)
-                .WithMessage("O usuario deve ter no mínimo 8 caracteres.")
-
-                .MaximumLength(14)
+                .MaximumLength(10)
                 .WithMessage("O usuario de ter no máximo 14 caracteres.");
 
             RuleFor(x => x.Nome)
@@ -40,7 +37,7 @@ namespace Domain.Validators
                 .MinimumLength(3)
                 .WithMessage("O nome de ve ter no mínimo 3 caracteres.")
 
-                .MaximumLength(80)
+                .MaximumLength(20)
                 .WithMessage("O nome de ter no mínimo 80 caracteres.");
 
             RuleFor(x => x.Senha)
@@ -50,8 +47,10 @@ namespace Domain.Validators
                 .NotNull()
                 .WithMessage("A senha não pode ser nula")
 
-                .MinimumLength(8)
-                .WithMessage("A senha deve ter no mínimo 8 caracteres.");
+                .MaximumLength(10)
+                .WithMessage("A senha de ter no mínimo 10 caracteres.");
+
+
 
 
         }

@@ -10,11 +10,13 @@ using Services.Interfaces;
 
 namespace Application.Controllers
 {
-        //controlador é o cara que recebe as requisições
-        //e manda para as camadas fazerem o que precisam
+    //controlador é o cara que recebe as requisições
+    //e manda para as camadas fazerem o que precisam
     [ApiController]
     public class UserController : ControllerBase
     {
+
+        //injeção de dependecia 
 
         private readonly IUserService _userService;
         private readonly IMapper _mapper;
@@ -27,7 +29,7 @@ namespace Application.Controllers
 
         [HttpPost] //rota de entrada para poder enviar o user
         [Route("/api/v1/users/create")]
-                    //retorna o resultado dee uma Task
+        //retorna o resultado dee uma Task
         public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
         {                                       //corpo da requisição
             try
@@ -48,9 +50,9 @@ namespace Application.Controllers
             {
                 return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return StatusCode(500, Responses.ApplicationErrorMessage());
+                return StatusCode(500, e.Message);
             }
         }
     }

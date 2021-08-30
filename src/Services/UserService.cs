@@ -12,7 +12,7 @@ namespace Services
     public class UserService : IUserService
     {
 
-            //injeção de dependencia
+        //injeção de dependencia
         private readonly IMapper _mapper;
 
         private readonly IUserRepository _userRepository;
@@ -53,11 +53,11 @@ namespace Services
             var userUpdated = await _userRepository.Update(userExists);
             return _mapper.Map<UserDTO>(userUpdated);
         }
-        public async Task Remove(long id)
+        public async Task Remove(int id)
         {
             await _userRepository.Remove(id);
         }
-        public async Task<List<UserDTO>> Get(long id)
+        public async Task<List<UserDTO>> Get(int id)
         {
             var allUsers = await _userRepository.Get(id);
             return _mapper.Map<List<UserDTO>>(allUsers);

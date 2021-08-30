@@ -5,7 +5,6 @@ namespace Domain.Entities
 {
     public abstract class BaseEntitie
     {
-        public long Id { get; set; }
         public string USUARIO_ATUALIZACAO { get; set; }
         public DateTime DATA_ATUALIZACAO { get; set; }
 

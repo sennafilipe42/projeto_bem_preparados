@@ -31,9 +31,8 @@ namespace Domain.Entities
         protected UserEntitie() { }
 
         //Construtor
-        public UserEntitie(int id, string usuario, string senha, string nome, DateTime validadeSenha)
+        public UserEntitie(string usuario, string senha, string nome, DateTime validadeSenha)
         {
-            this.Id = id;
             this.Usuario = usuario;
             this.Senha = senha;
             this.Nome = nome;

@@ -52,7 +52,7 @@ namespace Infra.Repositories
 
         //Pega o obj e verifica se existe, se existe(diferente de nullo)
         // ele vai no bd e remove
-        public virtual async Task Remove(long id)
+        public virtual async Task Remove(int id)
         {
             var obj = await Get(id);
 
@@ -68,11 +68,10 @@ namespace Infra.Repositories
         //seta o obj e coloca para não trackear
         // no metodo Get não precisa trackear
         //tornando mais leve a utilização
-        public virtual async Task<T> Get(long id)
+        public virtual async Task<T> Get(int id)
         {
             var obj = await _context.Set<T>()
                                     .AsNoTracking() //não precisa trackear
-                                    .Where(x => x.Id == id) //id for igual id repassado 
                                     .ToListAsync();
             return obj.FirstOrDefault(); //retorna o primeiro da lista
         }

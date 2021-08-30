@@ -8,17 +8,16 @@ using Infra.Interfaces;
 using Infra.Repositories;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using Services;
 using Services.DTO;
 using Services.Interfaces;
 using Domain.Entities;
+using Microsoft.EntityFrameworkCore;
+using Infra.Context;
 
 namespace Applications
 {
@@ -43,19 +42,24 @@ namespace Applications
                 cfg.CreateMap<UserEntitie, UserDTO>().ReverseMap();
                 cfg.CreateMap<CreateUserViewModel, UserDTO>().ReverseMap();
             });
-            #endregion 
+
             services.AddSingleton(autoMapperConfig.CreateMapper());
+            #endregion 
+
+            #region DI
             // //Adiciona uma stancia unica por requisicao
             // //durante todo o ciclo da aplicacao
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserRepository, UserRepository>();
-
+            services.AddDbContext<ContextBase>(options => options.UseSqlServer(Configuration["ConnectionStrings:USER_MANAGER"]));
+            services.AddSingleton(d => Configuration);
             //adiciona uma stancia nova em cada ponto do codigo
             //se precisar dessa mesma depencia em 3 ctors, ele cria 3 instancias
             //services.AddTransient<>();
 
             //uma só por aplicação, não importando o tempo de uso
             //services.AddSingleton<>();
+            #endregion
 
             services.AddSwaggerGen(c =>
             {

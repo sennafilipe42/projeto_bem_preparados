@@ -12,8 +12,8 @@ namespace Infra.Interfaces
         //T é qualquer entidade que seja base
         Task<T> Create(T obj);
         Task<T> Update(T obj);
-        Task Remove(long id);
-        Task<T> Get(long id);
+        Task Remove(int id);
+        Task<T> Get(int id);
         Task<List<T>> Get();
     }
 }
