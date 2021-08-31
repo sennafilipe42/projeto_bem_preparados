@@ -27,6 +27,14 @@ namespace Infra.Mappings
             builder.Property(x => x.ValidadeSenha)
                    .HasColumnName("VALIDADE_SENHA")
                    .HasColumnType("DATETIME");
+
+            builder.Property(x => x.Usuario_Atualizacao)
+                   .HasColumnName("USUARIO_ATUALIZACAO")
+                   .HasColumnType("VARCHAR(10)");
+
+            builder.Property(x => x.Data_Atualizacao)
+                   .HasColumnName("DATA_ATUALIZACAO")
+                   .HasColumnType("DATETIME");
         }
 
         private object UseIdentityColumn()

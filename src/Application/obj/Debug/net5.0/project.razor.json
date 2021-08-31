@@ -11897,7 +11897,7 @@
           {
             "Kind": "ITagHelper",
             "Name": "asp-all-route-data",
-            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.String>",
+            "TypeName": "System.Collections.Generic.IConnectionDb<System.String, System.String>",
             "IndexerNamePrefix": "asp-route-",
             "IndexerTypeName": "System.String",
             "Documentation": "\n            <summary>\n            Additional parameters for the route.\n            </summary>\n        ",
@@ -12060,7 +12060,7 @@
           {
             "Kind": "ITagHelper",
             "Name": "params",
-            "TypeName": "System.Collections.Generic.IDictionary<System.String, System.Object>",
+            "TypeName": "System.Collections.Generic.IConnectionDb<System.String, System.Object>",
             "IndexerNamePrefix": "param-",
             "IndexerTypeName": "System.Object",
             "Documentation": "\n            <summary>\n            Gets or sets values for component parameters.\n            </summary>\n        ",

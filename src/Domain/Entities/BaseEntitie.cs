@@ -5,8 +5,8 @@ namespace Domain.Entities
 {
     public abstract class BaseEntitie
     {
-        public string USUARIO_ATUALIZACAO { get; set; }
-        public DateTime DATA_ATUALIZACAO { get; set; }
+        public string Usuario_Atualizacao { get; set; }
+        public DateTime Data_Atualizacao { get; set; }
 
         //lista de erros, pois toda entidade precisa de um metodo de validação
         internal List<string> _errors;

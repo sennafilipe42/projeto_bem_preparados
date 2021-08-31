@@ -44,15 +44,16 @@ namespace Applications
             });
 
             services.AddSingleton(autoMapperConfig.CreateMapper());
-            #endregion 
+            #endregion
 
             #region DI
             // //Adiciona uma stancia unica por requisicao
             // //durante todo o ciclo da aplicacao
-            services.AddScoped<IUserService, UserService>();
-            services.AddScoped<IUserRepository, UserRepository>();
+            // services.AddScoped<IUserService, UserService>();
+            //services.AddScoped<IUserRepository, UserRepository>();
             services.AddDbContext<ContextBase>(options => options.UseSqlServer(Configuration["ConnectionStrings:USER_MANAGER"]));
             services.AddSingleton(d => Configuration);
+
             //adiciona uma stancia nova em cada ponto do codigo
             //se precisar dessa mesma depencia em 3 ctors, ele cria 3 instancias
             //services.AddTransient<>();

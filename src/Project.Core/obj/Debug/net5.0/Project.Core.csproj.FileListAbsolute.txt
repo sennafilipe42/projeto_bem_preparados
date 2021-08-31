@@ -2,7 +2,6 @@ C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\bin\Debug\net5.0\Pro
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\bin\Debug\net5.0\Project.Core.dll
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\bin\Debug\net5.0\ref\Project.Core.dll
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\bin\Debug\net5.0\Project.Core.pdb
-C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\obj\Debug\net5.0\Project.Core.csproj.AssemblyReference.cache
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\obj\Debug\net5.0\Project.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\obj\Debug\net5.0\Project.Core.AssemblyInfoInputs.cache
 C:\Users\Senna\projeto_bem_preparados_back\src\Project.Core\obj\Debug\net5.0\Project.Core.AssemblyInfo.cs

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "e5w/DNFBFmhNeV0HypH8t0DT78PkkHRaLQkD5MKvAdfJox13IkGqQPb7IyIFsAbIe9XeBu8BmLRlHmqDJlvKDg==",
+  "dgSpecHash": "ITh4dT7Hh/ZYE54UFRY71fWRgMauhRF+E/8zyKHVong3SV+EpF3gkabyP7ygAaeMaZPEjWUgG+viYjiHWUch6Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Senna\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
+    "C:\\Users\\Senna\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Senna\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512",
     "C:\\Users\\Senna\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Senna\\.nuget\\packages\\microsoft.data.sqlclient\\2.0.1\\microsoft.data.sqlclient.2.0.1.nupkg.sha512",

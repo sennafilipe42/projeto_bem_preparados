@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "63P+tChNCGHmDDXEwmJMTJxYLF4uo2r/1ZSJ60Ir0cdmR8h2hFdigchHO/6mmZKC9R6R9lL89kE+dzPbFdhqyQ==",
+  "dgSpecHash": "L8DIRzWTRcNPXxzGLWj3x2e10IjEsHh2f2Cn+rnkjolqzpcl6MuF1n4CBD6TwVHXSYQnXz7Y4V4HOtWPqaIqJw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Senna\\projeto_bem_preparados_back\\src\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Senna\\.nuget\\packages\\dapper\\2.0.90\\dapper.2.0.90.nupkg.sha512",
     "C:\\Users\\Senna\\.nuget\\packages\\fluentvalidation\\10.3.1\\fluentvalidation.10.3.1.nupkg.sha512"
   ],
   "logs": []

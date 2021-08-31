@@ -27,33 +27,35 @@ namespace Application.Controllers
             _mapper = mapper;
         }
 
-        [HttpPost] //rota de entrada para poder enviar o user
-        [Route("/api/v1/users/create")]
+        // [HttpPost] //rota de entrada para poder enviar o user
+        // [Route("/api/v1/users/create")]
         //retorna o resultado dee uma Task
-        public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
-        {                                       //corpo da requisição
-            try
-            {
-                var userDTO = _mapper.Map<UserDTO>(userViewModel);
+        // public async Task<IActionResult> Create([FromBody] CreateUserViewModel userViewModel)
+        //{                                       //corpo da requisição
+        // try
+        // {
+        //     // var userDTO = _mapper.Map<UserDTO>(userViewModel);
 
-                // await torna o método async, caso não coloque, vai acusar
-                var userCreated = await _userService.Create(userDTO);
+        //     // // await torna o método async, caso não coloque, vai acusar
+        //     // var userCreated = await _userService.Create(userDTO);
 
-                return Ok(new ResultViewModel
-                {
-                    Message = "Usuário criado com sucesso!",
-                    Success = true,
-                    Data = userCreated
-                });
-            }
-            catch (DomainException ex)
-            {
-                return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
-            }
-            catch (Exception e)
-            {
-                return StatusCode(500, e.Message);
-            }
-        }
+        //     // return Ok(new ResultViewModel
+        //     // {
+        //     //     Message = "Usuário criado com sucesso!",
+        //     //     Success = true,
+        //     //     Data = userCreated
+        //     // });
+        // }
+        // catch (DomainException ex)
+        // {
+        //     return BadRequest(Responses.DomainErrorMessage(ex.Message, ex.Errors));
+        // }
+        // catch (Exception e)
+        // {
+        //     return StatusCode(500, e.Message);
+        // }
     }
+
+
 }
+
